@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style/contact_style/contact.css" />
+  </head>
+  <body>
+    <div class="logo">
+      <a href="home.html">
+        <div class="logo-container">
+          <i class="fa-solid fa-f fa-2xl" style="color: white"></i>
+        </div>
+      </a>
+    </div>
+    <h1 class="heading">Contact Us</h1>
+    <form>
+      <label for="query">Type of Query:</label>
+      <input type="text" list="queries" id="query" />
+      <datalist id="queries">
+        <option value="Food related issue">Food related issue</option>
+        <option value="service related issue">service related issue</option>
+        <option value="ambience related issue">ambience related issue</option>
+      </datalist>
+      <label for="fname">Name:</label>
+      <input type="text" id="fname" />
+      <label for="email">Email-Id:</label>
+      <input type="email" id="email" />
+      <label for="Pnum">Phone Number:</label>
+      <input type="number" id="Pnum" />
+      <div>
+        <label for="yes">Are you a member of Online FoodShop:</label><br />
+        <input type="radio" id="yes" name="ok" />
+        <label for="yes" class="radio">Yes</label>
+        <input type="radio" id="no" name="ok" />
+        <label for="no" class="radio">No</label>
+      </div>
+      <label for="textbox">Elaborate your query</label>
+      <textarea name="textbox" id="textbox" cols="30" rows="10"></textarea>
+      <div class="btns">
+        <input type="submit" id="form_submit" onclick="click_submit()" />
+        <input type="reset" />
+      </div>
+    </form>
+  </body>
+  <script src="contact.js"></script>
+  <script src="https://kit.fontawesome.com/e5e1ada0c6.js" crossorigin="anonymous"></script>
+</html>

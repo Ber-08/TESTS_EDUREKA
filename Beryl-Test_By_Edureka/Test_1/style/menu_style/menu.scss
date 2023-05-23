@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  background-image: linear-gradient(
+    to right,
+    #e4afcb 0%,
+    #b8cbb8 0%,
+    #b8cbb8 0%,
+    #e2c58b 30%,
+    #c2ce9c 64%,
+    #7edbdc 100%
+  );
+
+  section {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+
+    article {
+      width: 100%;
+      height: 100%;
+
+      header {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        .heading {
+          width: 200px;
+          text-align: center;
+          color: #002155;
+          margin-bottom: 30px;
+          position: relative;
+        }
+        .heading::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          top: 50px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 100px;
+          height: 3px;
+          background-color: red;
+        }
+      }
+      .options {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 50px;
+
+        button {
+          border: 1px solid #b92b27;
+          border-radius: 10px;
+          box-shadow: 3px 3px 10px black;
+
+          a {
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-decoration: none;
+            color: #b92b27;
+            padding: 10px;
+          }
+        }
+      }
+      .grid_content {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        .card {
+          border: none;
+          border-radius: 10px;
+          margin: 10px;
+          background-color: transparent;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .grid-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+              height: 150px;
+              width: 170px;
+              border-radius: 10px;
+              border: 5px solid orange;
+            }
+            .card-body {
+              .dish_name {
+                border-bottom: 2px solid black;
+                display: flex;
+                justify-content: space-between;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
